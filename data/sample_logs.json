@@ -1,0 +1,42 @@
+[
+  {
+    "event_id": "EVT001",
+    "timestamp": "2026-06-15T10:30:00",
+    "source_ip": "192.168.1.25",
+    "failed_login": 2,
+    "requests": 120,
+    "ports_scanned": 3,
+    "packet_size": 250,
+    "event_type": "Normal Activity"
+  },
+  {
+    "event_id": "EVT002",
+    "timestamp": "2026-06-15T10:35:00",
+    "source_ip": "45.67.89.12",
+    "failed_login": 35,
+    "requests": 900,
+    "ports_scanned": 60,
+    "packet_size": 1400,
+    "event_type": "Brute Force Attack"
+  },
+  {
+    "event_id": "EVT003",
+    "timestamp": "2026-06-15T10:40:00",
+    "source_ip": "103.20.40.5",
+    "failed_login": 10,
+    "requests": 650,
+    "ports_scanned": 45,
+    "packet_size": 1100,
+    "event_type": "Port Scanning"
+  },
+  {
+    "event_id": "EVT004",
+    "timestamp": "2026-06-15T10:45:00",
+    "source_ip": "172.16.5.10",
+    "failed_login": 50,
+    "requests": 1200,
+    "ports_scanned": 80,
+    "packet_size": 2000,
+    "event_type": "Possible DDoS Behavior"
+  }
+]

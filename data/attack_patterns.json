@@ -1,0 +1,61 @@
+{
+  "attack_patterns": [
+
+    {
+      "name": "Brute Force Attack",
+      "description": "Repeated login failures from same source",
+      "indicators": {
+        "failed_login": ">20"
+      },
+      "severity": "HIGH",
+      "recommendation": [
+        "Enable MFA",
+        "Block suspicious IP",
+        "Monitor authentication logs"
+      ]
+    },
+
+
+    {
+      "name": "Port Scanning",
+      "description": "Scanning multiple network ports",
+      "indicators": {
+        "ports_scanned": ">30"
+      },
+      "severity": "MEDIUM",
+      "recommendation": [
+        "Enable firewall rules",
+        "Monitor network traffic"
+      ]
+    },
+
+
+    {
+      "name": "Traffic Flood Attack",
+      "description": "Abnormal amount of incoming requests",
+      "indicators": {
+        "requests": ">800"
+      },
+      "severity": "HIGH",
+      "recommendation": [
+        "Enable rate limiting",
+        "Analyze source IP"
+      ]
+    },
+
+
+    {
+      "name": "Suspicious Large Packet Transfer",
+      "description": "Unusual packet size detected",
+      "indicators": {
+        "packet_size": ">1500"
+      },
+      "severity": "MEDIUM",
+      "recommendation": [
+        "Inspect network payload",
+        "Check data leakage possibility"
+      ]
+    }
+
+  ]
+}
